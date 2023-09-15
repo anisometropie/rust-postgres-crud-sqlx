@@ -3,6 +3,7 @@ use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 use serde_json::json;
 
 mod model;
+mod schema;
 
 #[get("/api/healthchecker")]
 async fn health_checker_handler() -> impl Responder {
