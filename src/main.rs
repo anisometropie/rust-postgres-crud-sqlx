@@ -4,6 +4,7 @@ use serde_json::json;
 
 mod model;
 mod schema;
+mod handler;
 
 #[get("/api/healthchecker")]
 async fn health_checker_handler() -> impl Responder {
